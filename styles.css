@@ -1,0 +1,106 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eafaf1;
+    margin: 0;
+  }
+  .calculator {
+    width: 300px;
+    background: #2ecc71;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  #display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #d5f5e3;
+    border: none;
+    border-radius: 5px;
+  }
+  .ac {
+    width: 100%;
+    height: 40px;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    background: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  .ac:active {
+    background: #c0392b;
+  }
+  
+  .calc-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+  }
+  
+  .numbers .num-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .numbers button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    background: #27ae60;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .numbers button:active {
+    background: #1e8449;
+  }
+  .zero {
+    grid-column: span 3;
+  }
+  
+  .operators {
+    display: grid;
+    /* Three fixed rows for three operators and a final row for '+' and '=' */
+    grid-template-rows: repeat(3, 60px) auto;
+    gap: 10px;
+  }
+  .operators .operator {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    background: #229954;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .operators .operator:active {
+    background: #1c7a43;
+  }
+  .last-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .equal {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    background: #16a085;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .equal:active {
+    background: #12876f;
+  }
+  
