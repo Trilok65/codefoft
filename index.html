@@ -2,40 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Green Calculator</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" id="display" disabled />
-    <button onclick="clearDisplay()" class="ac">AC</button>
-    <div class="calc-container">
-      <div class="numbers">
-        <div class="num-grid">
-          <button onclick="appendToDisplay('7')">7</button>
-          <button onclick="appendToDisplay('8')">8</button>
-          <button onclick="appendToDisplay('9')">9</button>
-          <button onclick="appendToDisplay('4')">4</button>
-          <button onclick="appendToDisplay('5')">5</button>
-          <button onclick="appendToDisplay('6')">6</button>
-          <button onclick="appendToDisplay('1')">1</button>
-          <button onclick="appendToDisplay('2')">2</button>
-          <button onclick="appendToDisplay('3')">3</button>
-          <button onclick="appendToDisplay('0')" class="zero">0</button>
-        </div>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>Landing page</h1>
       </div>
-      <div class="operators">
-        <button onclick="appendToDisplay('/')" class="operator">÷</button>
-        <button onclick="appendToDisplay('*')" class="operator">×</button>
-        <button onclick="appendToDisplay('-')" class="operator">−</button>
-        <div class="last-row">
-          <button onclick="appendToDisplay('+')" class="operator">+</button>
-          <button onclick="calculate()" class="equal">=</button>
-        </div>
-      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-  <script src="script.js"></script>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Welcome to our landing  </h2>
+        <p>We create beautiful and functional websites for you.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section id="about" class="info">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers dedicated to creating stunning websites.</p>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+          <div class="service-card">
+            <h3>Web Development</h3>
+            <p>We build responsive websites using the latest technologies.</p>
+          </div>
+          <div class="service-card">
+            <h3>Design</h3>
+            <p>We create beautiful and modern designs tailored to your needs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <a href="mailto:contact@mywebsite.com" class="btn">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 trilok neupane | All Rights Reserved</p>
+    </div>
+  </footer>
 </body>
 </html>
